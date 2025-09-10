@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Raj Bhartiya — Portfolio</title>
+    <meta name="description" content="Portfolio of Raj Bhartiya — Developer, Designer, and Problem Solver." />
+    <meta name="author" content="Raj Bhartiya" />
+
+    <!-- Open Graph for better sharing -->
+    <meta property="og:title" content="Raj Bhartiya — Portfolio" />
+    <meta property="og:description" content="Projects, skills, and contact information." />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <!-- Skip link for accessibility -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-elevate>
+      <nav class="nav container">
+        <a class="logo" href="#">RB<span>.</span></a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero container">
+        <div class="hero-content">
+          <p class="eyebrow">Hello, I’m</p>
+          <h1>Raj Bhartiya</h1>
+          <p class="lead">Full‑stack developer crafting fast, accessible, and delightful web experiences.</p>
+          <div class="cta-group">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="mailto:hello@example.com">Email Me</a>
+          </div>
+          <ul class="meta">
+            <li>📍 India</li>
+            <li>💼 Open to opportunities</li>
+          </ul>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>I build performant interfaces and resilient backends. I love neat UX, clean code, and shipping features.
+          </p>
+        </div>
+        <div class="about-grid">
+          <article class="card">
+            <h3>What I do</h3>
+            <p>
+              Design, develop, and deploy modern web apps. I focus on accessibility, performance, and maintainability.
+            </p>
+            <ul class="checklist">
+            <!--  <li>Responsive UI and design systems</li>
+              <li>APIs & databases</li>
+              <li>Automation & CI/CD</li>
+            </ul> -->
+          </article>
+          <article class="card">
+            <h3>Highlights</h3>
+            <ul class="bullets">
+              <li>⚡ Improved Core Web Vitals by 35% on a SaaS dashboard</li>
+              <li>🧩 Built reusable component library used across 4 apps</li>
+              <li>🔒 Led auth migration to OAuth 2.1 with zero downtime</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p>Tools & technologies I use regularly.</p>
+        </div>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">TypeScript</span>
+
+          <span class="tag">Git</span>
+          
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>A few things I’m proud of. Filter to explore.</p>
+        </div>
+
+     <div class="filters" role="tablist" aria-label="Project filters">
+          <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter" data-filter="frontend" role="tab">Frontend</button>
+          <button class="filter" data-filter="fullstack" role="tab">Full‑stack</button>
+          <button class="filter" data-filter="tooling" role="tab">Tooling</button>
+        </div>
+
+       <!-- <div class="grid projects-grid">
+          <article class="project-card" data-tags="frontend">
+            <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72?q=80&w=1200&auto=format&fit=crop" alt="Screenshot of a responsive landing page" loading="lazy" />
+            <div class="content">
+              <h3>PixelPerfect Landing</h3>
+              <p>High‑performance, accessible marketing page template with A11y‑first components.</p>
+              <div class="chip-row"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JS</span></div>
+              <a class="btn small" href="#" aria-label="View PixelPerfect Landing details">Details</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="fullstack">
+            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1200&auto=format&fit=crop" alt="Dashboard UI with charts" loading="lazy" />
+            <div class="content">
+              <h3>Metrics HQ</h3>
+              <p>Analytics dashboard with JWT auth, role‑based access, and REST APIs.</p>
+              <div class="chip-row"><span class="chip">React</span><span class="chip">Node</span><span class="chip">Postgres</span></div>
+              <a class="btn small" href="#" aria-label="View Metrics HQ details">Details</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="tooling">
+            <img src="https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fi.ibb.co%2FF4THZ2T%2Fcli-tools-banner.png" alt="Terminal with code" loading="lazy" />
+            <div class="content">
+              <h3>CLI Toolbox</h3>
+              <p>Developer productivity CLI: project scaffolding, linting, and release scripts.</p>
+              <div class="chip-row"><span class="chip">Node</span><span class="chip">TS</span><span class="chip">DX</span></div>
+              <a class="btn small" href="#" aria-label="View CLI Toolbox details">Details</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="frontend">
+            <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?q=80&w=1200&auto=format&fit=crop" alt="Mobile app mockups" loading="lazy" />
+            <div class="content">
+              <h3>Motion UI Kit</h3>
+              <p>Micro‑interaction kit with focus states and reduced‑motion support.</p>
+              <div class="chip-row"><span class="chip">CSS</span><span class="chip">Animations</span></div>
+              <a class="btn small" href="#" aria-label="View Motion UI Kit details">Details</a>
+            </div>
+          </article>
+        </div>
+      </section>-->
+
+      <p><b>Pending</b> </p>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section container">
+        <div class="section-head">
+          <h2>Experience</h2>
+          <p>Where I’ve worked and what I’ve shipped.</p>
+        </div>
+        <ul class="timeline">
+          <li>
+            <div class="dot"></div>
+            <div class="time">2024 — Present</div>
+            <div class="desc"><strong>Full‑stack Developer</strong> at Acme Labs — Building internal tooling, APIs.</div>
+          </li>
+          <li>
+            <div class="dot"></div>
+            <div class="time">2022 — 2024</div>
+            <div class="desc"><strong>Frontend Engineer</strong> .</div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>Have a project or role in mind? Let’s talk.</p>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+            <span class="error" id="nameError" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <span class="error" id="emailError" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about your project" required></textarea>
+            <span class="error" id="messageError" role="alert"></span>
+          </div>
+          <button class="btn primary" type="submit">Send Message</button>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Raj Bhartiya. All rights reserved.</p>
+        <div class="socials" aria-label="Social links">
+          <a href="#" aria-label="GitHub">🐱</a>
+          <a href="#" aria-label="LinkedIn">💼</a>
+          <a href="#" aria-label="Twitter / X">✖️</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
